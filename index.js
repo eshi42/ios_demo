@@ -8,7 +8,7 @@ app.get('',function (req,response) {
 	response.sendFile(__dirname + '/' + 'index.html')
 })
 
-var server = app.listen(53736,function() {
+var server = app.listen(function() {
 	var host = server.address().address
 	var port = server.address().port
 	  	console.log('listening at http://%s:%s',host,port)
