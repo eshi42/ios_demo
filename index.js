@@ -4,7 +4,7 @@ var app = express()
 
 app.use(express.static('public'));
 
-app.get('/index.html',function (req,response) {
+app.get('',function (req,response) {
 	response.sendFile(__dirname + '/' + 'index.html')
 })
 
